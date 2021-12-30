@@ -81,6 +81,7 @@ header nav ul .waitlist {
   font-weight: 600;
   padding: .75rem .5rem;
   border-radius: .25rem;
+  text-decoration: none;
 }
 
 header nav ul .center_links {
