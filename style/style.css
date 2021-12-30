@@ -12,6 +12,16 @@ body {
   background: #F9F4E8;
   font-family: Lato, sans-serif;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 img {
@@ -238,6 +248,11 @@ main .text .spam {
 }
 
 main .hero_image {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   width: 75%;
   margin: auto;
   position: relative;
@@ -346,19 +361,6 @@ main .hero_image .blue.purple, main .hero_image .pink.purple, main .hero_image .
 }
 
 @media screen and (min-width: 1440px) {
-  main {
-    padding: 2.25rem;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   main .text {
     width: 50%;
   }
@@ -376,17 +378,7 @@ main .hero_image .blue.purple, main .hero_image .pink.purple, main .hero_image .
 
 @media screen and (min-width: 1600px) {
   main {
-    padding: 5rem;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    padding: 0 5rem;
   }
   main .text {
     width: 40%;
@@ -399,6 +391,81 @@ main .hero_image .blue.purple, main .hero_image .pink.purple, main .hero_image .
   }
   main .hero_image {
     width: 45%;
+  }
+}
+
+footer {
+  padding: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+footer nav ul {
+  list-style-type: none;
+  color: #525252;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+footer .specialist_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .75rem;
+}
+
+footer .specialist_box .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .25rem;
+}
+
+footer .specialist_box .text .question {
+  font-family: Playfair Display;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 1.75rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    padding: 2.25rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  footer {
+    padding: 1.75rem 5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

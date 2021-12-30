@@ -1,0 +1,52 @@
+footer {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    nav {
+        ul {
+            list-style-type: none;
+            color: #525252;
+            display: flex;
+            gap: 1rem;
+        }
+    }
+
+    .specialist_box {
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            gap: .25rem;
+
+            .question {
+                font-family: Playfair Display;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    footer {
+        padding: 1.75rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    footer {
+        padding: 2.25rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    footer {
+        padding: 1.75rem 5rem;
+    }
+}

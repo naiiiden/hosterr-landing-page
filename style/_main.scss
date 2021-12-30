@@ -45,6 +45,8 @@ main {
     }
 
     .hero_image {
+        pointer-events: none;
+        user-select: none;
         width: 75%;
         margin: auto;
         position: relative;
@@ -150,11 +152,6 @@ main {
 
 @media screen and (min-width: 1440px) {
     main {
-        padding: 2.25rem;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-
         .text {
             width: 50%;
 
@@ -176,10 +173,7 @@ main {
 
 @media screen and (min-width: 1600px) {
     main {
-        padding: 5rem;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        padding: 0 5rem;
 
         .text {
             width: 40%;
