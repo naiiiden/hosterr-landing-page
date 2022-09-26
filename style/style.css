@@ -59,7 +59,7 @@ header nav ul a {
   color: #525252;
 }
 header nav ul .waitlist {
-  background: #4977EA;
+  background: #3F6FE9;
   color: #fff;
   font-weight: 600;
   padding: 0.75rem 0.5rem;
@@ -151,7 +151,7 @@ main .text form .email, main .text form .submit {
   font-family: Lato;
 }
 main .text form .email.submit, main .text form .submit.submit {
-  background: #4977EA;
+  background: #3F6FE9;
   color: #fff;
   font-weight: 600;
 }

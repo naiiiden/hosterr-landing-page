@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    // outline: 1px solid red;
 }
 
 body {
@@ -14,7 +15,6 @@ body {
     background: #F9F4E8;
     font-family: Lato, sans-serif;
     position: relative;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
