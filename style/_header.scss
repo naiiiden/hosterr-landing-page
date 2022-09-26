@@ -29,10 +29,19 @@ header {
 
     nav {
         ul {
-            color: #525252;
             list-style-type: none;
             display: flex;
             gap: 1rem;
+
+            .center, .right {
+                margin-left: auto;
+
+            }
+
+            a {
+                text-decoration: none;
+                color: #525252;
+            }
 
             .waitlist {
                 background: #4977EA;
@@ -41,18 +50,6 @@ header {
                 padding: .75rem .5rem;
                 border-radius: .25rem;
                 text-decoration: none;
-            }
-
-            .center_links {
-                display: flex;
-                align-items: center;
-                gap: 1rem;
-            }
-
-            .end_links {
-                display: flex;
-                align-items: center;
-                gap: 1rem;
             }
         }
     }
@@ -74,19 +71,22 @@ header {
                 bottom: 0;
                 width: 50%;
                 background-image: linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
+                gap: 1.5rem;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                    color: #525252;
+                }
+
+                .center, .right {
+                    margin-left: unset;
+                }
 
                 &.show {
                     right: 0;
                     transition: .5s ease;
                     z-index: 2;
-                }
-
-                .center_links {
-                    flex-direction: column;
-                }
-
-                .end_links {
-                    flex-direction: column;
                 }
             }
         }
@@ -113,16 +113,6 @@ header {
 
         nav {
             flex-grow: 1;
-
-            ul {
-                .center_links {
-                    margin-left: auto;
-                }
-
-                .end_links {
-                    margin-left: auto;
-                }
-            }
         }
     }
 }
